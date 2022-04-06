@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="Objedn?vka">
+  <Parameters>
+    <Parameter id="1" name="registrace" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="Jmeno" type="1">
+      <values>
+        <value>pismena</value>
+        <value>zvl??tn? znaky</value>
+      </values>
+      <basechoices />
+      <invalidValues>
+        <invalidValue>NULL</invalidValue>
+      </invalidValues>
+    </Parameter>
+    <Parameter id="4" name="Destinace" type="1">
+      <values>
+        <value>Mimo EU</value>
+        <value>V EU</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="Datum" type="1">
+      <values>
+        <value>DD.MM.YYYY</value>
+        <value>MM.DD.YYYY</value>
+        <value>YYYY.MM.DD</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="Sleva" type="1">
+      <values>
+        <value>Student</value>
+        <value>D?chodce</value>
+        <value>Slevov? kupon</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints />
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>false</Value>
+      <Value>zvl??tn? znaky</Value>
+      <Value>V EU</Value>
+      <Value>DD.MM.YYYY</Value>
+      <Value>Student</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>true</Value>
+      <Value>pismena</Value>
+      <Value>Mimo EU</Value>
+      <Value>DD.MM.YYYY</Value>
+      <Value>D?chodce</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>false</Value>
+      <Value>pismena</Value>
+      <Value>V EU</Value>
+      <Value>DD.MM.YYYY</Value>
+      <Value>Slevov? kupon</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>true</Value>
+      <Value>zvl??tn? znaky</Value>
+      <Value>Mimo EU</Value>
+      <Value>MM.DD.YYYY</Value>
+      <Value>Student</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>false</Value>
+      <Value>pismena</Value>
+      <Value>V EU</Value>
+      <Value>MM.DD.YYYY</Value>
+      <Value>D?chodce</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>true</Value>
+      <Value>zvl??tn? znaky</Value>
+      <Value>Mimo EU</Value>
+      <Value>MM.DD.YYYY</Value>
+      <Value>Slevov? kupon</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>false</Value>
+      <Value>pismena</Value>
+      <Value>Mimo EU</Value>
+      <Value>YYYY.MM.DD</Value>
+      <Value>Student</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>true</Value>
+      <Value>zvl??tn? znaky</Value>
+      <Value>V EU</Value>
+      <Value>YYYY.MM.DD</Value>
+      <Value>D?chodce</Value>
+    </Testcase>
+    <Testcase TCNo="8">
+      <Value>9</Value>
+      <Value>false</Value>
+      <Value>zvl??tn? znaky</Value>
+      <Value>Mimo EU</Value>
+      <Value>YYYY.MM.DD</Value>
+      <Value>Slevov? kupon</Value>
+    </Testcase>
+    <Testcase TCNo="9">
+      <Value>10</Value>
+      <Value>false</Value>
+      <Value>NULL</Value>
+      <Value>V EU</Value>
+      <Value>DD.MM.YYYY</Value>
+      <Value>D?chodce</Value>
+    </Testcase>
+    <Testcase TCNo="10">
+      <Value>11</Value>
+      <Value>true</Value>
+      <Value>NULL</Value>
+      <Value>Mimo EU</Value>
+      <Value>MM.DD.YYYY</Value>
+      <Value>Slevov? kupon</Value>
+    </Testcase>
+    <Testcase TCNo="11">
+      <Value>12</Value>
+      <Value>false</Value>
+      <Value>NULL</Value>
+      <Value>V EU</Value>
+      <Value>YYYY.MM.DD</Value>
+      <Value>Student</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>registrace</Value>
+    <Value>Jmeno</Value>
+    <Value>Destinace</Value>
+    <Value>Datum</Value>
+    <Value>Sleva</Value>
+  </Header>
+  <Graph-Data>
+    <Value>0.14925373</Value>
+    <Value>0.29850745</Value>
+    <Value>0.3880597</Value>
+    <Value>0.5074627</Value>
+    <Value>0.5970149</Value>
+    <Value>0.6567164</Value>
+    <Value>0.74626863</Value>
+    <Value>0.8358209</Value>
+    <Value>0.8507463</Value>
+    <Value>0.9104478</Value>
+    <Value>0.9701493</Value>
+    <Value>1.0</Value>
+  </Graph-Data>
+  <Stat-Data>
+    <ExecutionTime>0.148</ExecutionTime>
+    <MaxDomainSize>3</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>67</TotalNoOfCombination>
+    <TotalNoOfTests>12</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
